@@ -1,0 +1,23 @@
+{
+  "name": "encuentro_virtual_node",
+  "version": "0.0.1",
+  "description": "Intento de conecar poseNet con sockets via node",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node.js",
+    "p5.js",
+    "poseNet",
+    "express",
+    "socket.io"
+  ],
+  "author": "Fernando A. Bava (Emmelab)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.1.2"
+  }
+}

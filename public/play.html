@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+    <style> body {padding: 0; margin: 0;} </style>
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+
+    <!-- POSE NET
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
+
+    <!-- P5JS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="p5/p5.js"></script>
+
+    <!-- SOCKET.IO
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- JS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="exp/js/video.js"></script>
+    <script src="exp/js/app.js"></script>
+    <script src="exp/js/sketch.js"></script>
+
+  </head>
+  <body id="body">
+
+
+    <div class="container">
+      <!-- <img id="img" src="img/Matest.jpeg" alt="Imagen de prueba"> -->
+      <video id="video" width="640" height="480" autoplay></video>
+      <div id="canvas-holder">
+      </div>
+    </div>
+
+  </body>
+</html>
