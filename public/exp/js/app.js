@@ -2,6 +2,8 @@ const videoWidth = 640;
 const videoHeight = 480;
 //Probar con Optical Flow
 
+const server = window.location.href;
+
 let net;
 let pose;
 let rawPoints;
@@ -16,7 +18,7 @@ $(document).ready(function() {
     loadPoseNet();
   });
   //SOCKET
-  socket = io.connect('http://localhost:7200'); //Conecto la socket
+  socket = io.connect(server); //Conecto la socket
   console.log('Sala: ' + room);
   socket.emit('join', {r: room})
 });

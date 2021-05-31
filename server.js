@@ -5,6 +5,10 @@ let port = process.env.PORT || 7200;
 
 var nRooms = 0;
 
+var orig = 'http://localhost:7200/play.html';
+orig = process.env.PORT ? 'https://p-encuentro-cuerpo-virtual.herokuapp.com/play.html' : orig;
+
+
 // EXPRESS -------------------------
 
 var app = express();
@@ -20,7 +24,7 @@ app.get('/room-info', (req, res)=>{ //Get request para el nro de Rooms
 // SOCKETS -------------------------
 var io = socket(server, {
   cors: {
-    origin: "http://localhost:7200/play.html",
+    origin: orig,
     methods: ["GET", "POST"]
   }
 });
