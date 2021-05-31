@@ -2,7 +2,7 @@ const videoWidth = 640;
 const videoHeight = 480;
 //Probar con Optical Flow
 
-const server = window.location.href;
+const server = window.location.href.split('?')[0];
 
 let net;
 let pose;

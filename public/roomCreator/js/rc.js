@@ -14,7 +14,7 @@ $(document).ready(function() {
       $.get(server + 'room-info', (info)=>{
         console.log(info);
         var room = $input.val().toLowerCase() + info;
-        var url = window.location.href + '/play.html' + '?r=' + room;
+        var url = window.location.href + 'play.html' + '?r=' + room;
         window.location = url;
       })
       //Redireccionar a una nueva página con params
