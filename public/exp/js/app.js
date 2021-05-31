@@ -6,7 +6,6 @@ const server = window.location.href.split('play')[0];
 
 let net;
 let pose;
-let rawPoints;
 
 const room = window.location.href.split('=')[1];
 
@@ -22,6 +21,8 @@ $(document).ready(function() {
   socket = io.connect(server); //Conecto la socket
   console.log('Sala: ' + room);
   socket.emit('join', {r: room})
+
+  socket.on('keyPoints', drawOther);
 });
 
 async function loadPoseNet() {
