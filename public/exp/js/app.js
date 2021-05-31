@@ -2,7 +2,7 @@ const videoWidth = 640;
 const videoHeight = 480;
 //Probar con Optical Flow
 
-const server = window.location.href.split('?')[0];
+const server = window.location.href.split('play')[0];
 
 let net;
 let pose;
@@ -18,6 +18,7 @@ $(document).ready(function() {
     loadPoseNet();
   });
   //SOCKET
+  console.log(`conectandose a ${server}`);
   socket = io.connect(server); //Conecto la socket
   console.log('Sala: ' + room);
   socket.emit('join', {r: room})
